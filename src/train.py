@@ -32,7 +32,7 @@ def train_tokenizer(input_path, tokenizer_path, vocab_size=512):
         special_tokens=special_tokens,
         vocab_size=vocab_size,
         min_frequency=2,
-        continuing_subword_prefix="##",  # BERT-style subword prefix
+        continuing_subword_prefix="##",  # BERT-style subword prefix, not in use for now
         show_progress=True
     )
 
